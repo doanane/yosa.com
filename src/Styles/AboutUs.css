@@ -1,0 +1,474 @@
+
+.header {
+  position: relative;
+  height: 50vh;
+  background: url('../Assets/aboutuss.png') no-repeat center center/cover;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.header-text {
+  max-width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+
+ 
+}
+.header-text h1{
+  background: rgba(56, 2, 68, 0.4);
+  font-size: 24px;
+  margin-top: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.text-content {
+  padding: 50px;
+}
+
+.text-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.image-content {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  width: 70%;
+  height: 70%;
+  clip-path: polygon(0 10%, 100% 0, 100% 20%, 0 30%, 0 35%, 100% 25%, 100% 45%, 0 55%, 0 60%, 100% 50%, 100% 70%, 0 80%, 0 85%, 100% 75%, 100% 95%, 0 100%);
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .text-content {
+    padding: 20px;
+  }
+
+  .text-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .image-content {
+    order: -1;
+  }
+
+  .vertical-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+  }
+}
+
+.about-section,.gallery-section {
+  margin: 100px 0;
+}
+
+.charitySection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--background);
+  overflow: hidden;
+  color: var(--foreground);
+  margin-top:100px;
+}
+
+.charityContent {
+  flex: 1 1 50%;
+  min-width: 200px;
+  text-align: left;
+  
+}
+
+.charityContent h2 {
+  color: var(--secondary);
+}
+
+.charityContent h1 {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.charityContent p {
+  margin: 10px 0;
+}
+
+.missionVision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mission,
+.vision {
+  flex: 1 1 45%;
+  background-color: #eaf4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.mission img,
+.vision img {
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 35px;
+  width: 35px;
+}
+
+.progressBars {
+  margin-top: 20px;
+  
+}
+
+.progressBar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progressBar span {
+  flex: 1;
+}
+
+.bar {
+  flex: 4;
+  background-color: #eaf4f4;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fill {
+  background-color: green;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .charityContent,
+  .charityImage {
+    flex: 1 1 100%;
+    font-size: 2.5vw;
+   left: -5px;
+   
+  }
+}
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 600px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.mission-section {
+  text-align: center;
+}
+
+.mission-cards {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.mission-card {
+  background: #c7e7df;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.about-us-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.image-container {
+  position: relative;
+  max-width: 80%;
+}
+
+.main-image {
+  display: block;
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 250px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  left: -30px;
+  height: 200px;
+  border: 7px solid #bdebe0;
+}
+
+.overlay-text {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  color: #111827;
+  margin: 0;
+}
+
+.features-section {
+  padding: 3rem 1rem;
+  color: #333;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.features-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 350px;
+  height: 400px;
+  margin-left: -15 px;
+}
+
+.feature-card-dark {
+  background-color: #eaf4f4;
+  color: black;
+}
+
+.feature-card-light {
+  background-color: #eaf4f4;
+}
+
+.feature-card-light:hover {
+  background-color: #1b2735;
+  color:white;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-card ul {
+  list-style-type: decimal;
+  padding-left: 1.0rem;
+  margin: 0;
+}
+
+.feature-card li {
+  margin-bottom: 0.5rem;
+}
+
+.gallery-section {
+  text-align: center;
+
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  justify-items: center;
+}
+
+.gallery-images img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  height: auto; /* Adjust based on your needs, or remove if auto is preferred */
+}
+
+  .mission-section h1,
+  .mission-section h2,
+  .mission-section p,
+  .text-content h1,
+  .text-content h2,
+  .text-content p {
+    text-align: center;
+   
+  }
+
+
+@media (max-width: 992px) {
+  .header {
+    height: 40vh;
+    
+  }
+
+  
+
+  
+}
+
+@media (max-width: 768px) {
+  .features-cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left:5px ;
+  }
+
+
+}
+
+@media (max-width: 576px) {
+  .header {
+    height: 30vh;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .logo {
+    height: 30px;
+    align-items: flex-start;
+  }
+
+  
+
+  
+.charityContent{
+  font-size: 0.8em;
+}
+  
+
+  .about-section,
+  .mission-section,
+  .donation-section,
+  .features-section,
+  .gallery-section {
+    margin: 80px 0;
+  }
+
+  .features-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .main-image {
+    width: 500px;
+    margin-left: 70px;
+    height: 250px;
+  }
+
+  .overlay {
+    left: -60px;
+    width: 100;
+    text-align: center;
+    height: auto;
+    margin-top: 2x;
+    padding: 1rem 0;
+    font-size: 0.8em;
+  }
+
+  .overlay-text {
+    padding-left: 0;
+  }
+
+
+  .mission-section h1 {
+    font-size: 1em;
+  }
+
+  .mission-section h2 {
+    font-size: 0.9em;
+  }
+
+  .mission-section p {
+    font-size: 0.8em;
+  }
+}
